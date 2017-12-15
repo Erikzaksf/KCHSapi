@@ -4,7 +4,7 @@ describe "post a animal route", :type => :request do
 
   before do
     post '/animals', params: { :name => 'test_name', :breed => 'test_breed',
-      :age => 'test_age', :species => 'test_species', :gender 'test_gender',
+      :age => 'test_age', :species => 'test_species', :gender => 'test_gender',
       :about => 'test_about'
      }
   end
