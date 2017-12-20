@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# King County Humane Society API
 
-Things you may want to cover:
+  This API is provided to aid in the adoption of animals at the King County Human Society.
 
-* Ruby version
+* Clone repository to local system.
+* Navigate to the project root folder and run the following commands in the terminal.
 
-* System dependencies
+  $ bundle install
 
-* Configuration
+  $ rails db:setup
 
-* Database creation
+  $ rails c
 
-* Database initialization
+  irb(main):001:0>User.create!(email: 'example@mail.com' , password: 'your_password' , password_confirmation: 'your_password')
 
-* How to run the test suite
+  Then post the email, password and password_confirmation params into localhost:3000/authenticate to receive your API secret token.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  Once authenticated the route localhost:3000/animals will list all current animals in the database.
+  localhost:3000/aniamls/:id will return a single animal matching the given :id
+  

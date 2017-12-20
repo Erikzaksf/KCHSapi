@@ -6,13 +6,9 @@ FactoryBot.define do
   factory :user do
     name "MyString"
     email "MyString"
-    password_digest "MyString"
+    password "MyString"
+    password_confirmation "MyString"
   end
-  # factory :user do
-  #   name "MyString"
-  #   email "MyString"
-  #   password_digest "MyString"
-  # end
 
   factory :animal do
     animal = Animal.create!
