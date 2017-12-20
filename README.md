@@ -17,6 +17,5 @@
 
   Then post the email, password and password_confirmation params into localhost:3000/authenticate to receive your API secret token.
 
-  Once authenticated the route localhost:3000/animals will list all current animals in the database.
+  Now you can pass your token to the o.auth2 field and localhost:3000/animals will list all current animals in the database.
   localhost:3000/aniamls/:id will return a single animal matching the given :id
-  
